@@ -8,11 +8,7 @@ public class Teacher {
         this.name = name;
         this.ageToStudents = new HashMap<>();
         for (Student student : students) {
-            if (student != null) {
-                List<Student> peerStudents = this.ageToStudents.getOrDefault(student.getAge(), new ArrayList<>());
-                peerStudents.add(student);
-                this.ageToStudents.put(student.getAge(), peerStudents);
-            }
+            addStudent(student);
         }
     }
 

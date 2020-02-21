@@ -11,7 +11,7 @@ public class Application {
         teacher.addStudent(new Student("Solider", 20));
         Set<Integer> studentAges = teacher.getAgeToStudents().keySet();
         for (Integer studentAge : studentAges) {
-            System.out.println(studentAge + "岁 : " + teacher.getAgeToStudents().get(studentAge));
+            System.out.println(studentAge + "岁: " + teacher.getAgeToStudents().get(studentAge));
         }
     }
 
